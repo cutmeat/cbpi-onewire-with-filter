@@ -59,7 +59,7 @@ class ONE_WIRE_SENSOR_FILTER(SensorPassive):
     sensor_name = Property.Select("Sensor", getSensors(), description="The OneWire sensor address.")
     offset = Property.Number("Offset", True, 0, description="Offset which is added to the received sensor data. Positive and negative values are both allowed.")
     ignore_below = Property.Number("Ignore Below", True, -30, description="Values below this value will be ignored")
-    ignore_above = Property.Number("Ignore Above", True, 120, description="Values below this value will be ignored")
+    ignore_above = Property.Number("Ignore Above", True, 120, description="Values above this value will be ignored")
 
     def init(self):
 
